@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") apply false
+    kotlin("jvm") version "2.0.20"
 }
 
 group = "com.otus.otuskotlin.marketplace"
@@ -15,4 +15,10 @@ subprojects {
     }
     group = rootProject.group
     version = rootProject.version
+}
+dependencies {
+    implementation(kotlin("stdlib-jdk8"))
+}
+kotlin {
+    jvmToolchain(8)
 }
