@@ -1,9 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.otus.otuskotlin.kmp.kt2java.InteroperabilityJava;
-import ru.otus.otuskotlin.kmp.kt2java.MyClass;
-import ru.otus.otuskotlin.kmp.kt2java.UtilKt;
-import ru.otus.otuskotlin.kmp.kt2java.Utils;
+import ru.otus.otuskotlin.kmp.kt2java.*;
 
 import java.io.SyncFailedException;
 
@@ -61,6 +58,12 @@ public class Ex5InteroperabilityJavaTest {
         Assertions.assertEquals("date", Utils.getDate());
         Assertions.assertEquals("name", Utils.getName());
         UtilKt.getDate1();
+    }
+
+    @Test
+    void extensionFunctions() {
+        final var res = KtExtKt.someExtension("baseString", "argString");
+        Assertions.assertEquals("baseString.someExtension(argString)", res);
     }
 
     @Test

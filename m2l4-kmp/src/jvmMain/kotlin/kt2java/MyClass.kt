@@ -3,7 +3,7 @@ package ru.otus.otuskotlin.kmp.kt2java
 import java.io.Serial
 import java.io.SyncFailedException
 
-class MyClass(
+class MyClass @JvmOverloads constructor(
     // прямой доступ к полю без геттеров и сеттеров
     @JvmField
     val a: String = "a-prop",
