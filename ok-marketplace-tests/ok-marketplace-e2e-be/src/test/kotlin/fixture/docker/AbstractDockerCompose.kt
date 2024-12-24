@@ -28,8 +28,8 @@ abstract class AbstractDockerCompose(
 
     private val compose =
         DockerComposeContainer(getComposeFiles()).apply {
-//            withOptions("--compatibility")
-            withStartupTimeout(Duration.ofMinutes(5))
+            withOptions("--compatibility")
+            withStartupTimeout(Duration.ofMinutes(10))
             apps.forEach { (service, port) ->
                 withExposedService(
                     service,
