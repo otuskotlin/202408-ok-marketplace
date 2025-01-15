@@ -57,3 +57,6 @@ include(":ok-marketplace-repo-postgres")
 include(":ok-marketplace-repo-cassandra")
 include(":ok-marketplace-repo-gremlin")
 
+// Auth
+include(":ok-marketplace-auth")
+
