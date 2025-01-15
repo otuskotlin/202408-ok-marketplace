@@ -32,6 +32,9 @@ class AccRestWiremockTest : AccRestTestBaseFull(WiremockDockerCompose)
 //class AccRestSpringPgTest : AccRestTestBaseFull(SpringDockerCompose, debug = TestDebug.PROD)
 //class AccRestKtorPgJvmTest : AccRestTestBaseFull(KtorJvmPGDockerCompose, debug = TestDebug.PROD)
 //class AccRestKtorPgLinuxTest : AccRestTestBaseShort(KtorLinuxPGDockerCompose, debug = TestDebug.PROD)
+//class AccRestKtorCsJvmTest : AccRestTestBaseFull(KtorJvmCSDockerCompose, debug = TestDebug.PROD)
+//class AccRestKtorGrJvmTest : AccRestTestBaseFull(KtorJvmGRDockerCompose, debug = TestDebug.PROD)
+
 
 class AccRestKtorKeycloakJvmTest : BaseFunSpec(KtorJvmKeycloakDockerCompose, {
     val restClient = RestAuthClient(KtorJvmKeycloakDockerCompose)
